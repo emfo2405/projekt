@@ -112,5 +112,7 @@ function runAirData(airData) {
     const airDataPM10 = airDataEl.pm10;
     const airDataPM2_5 = airDataEl.pm2_5;
 
+    document.getElementById("pm10").innerHTML = airDataPM10 + " &#181g/m&#179";
+    document.getElementById("pm25").innerHTML = airDataPM2_5 + " &#181g/m&#179";
 
 }

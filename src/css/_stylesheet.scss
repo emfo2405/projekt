@@ -5,14 +5,17 @@ $background-color: #D8DAC5;
 $highlight-color: #96A480;
 $frame-color: #f9d587;
 $text-color: #edeae1;
+$shadow-color: #9c8a64;
 
 
 @mixin button() {
-  padding: 0.5%;
-  padding-right: 2%;
-  padding-left: 2%;
+  padding: 1%;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
   border-radius: 10px;
-  border-color: $frame-color;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: $shadow-color;
   background-color: $frame-color;
   margin: auto;
 
@@ -105,4 +108,37 @@ nav {
 #search-button:hover {
 @include button-hover();
 }
+
+#search-bar {
+margin-left: 25%;
+
+
+  input {
+    width: 50%;
+    padding: 1%;
+    border: none;
+    border-bottom: 2px solid;
+    border-radius: 10px;
+    border-color: $shadow-color;
+    background-color: lighten($primary-color, 7%);
+    
+  }
+
+  input:focus {
+    background-color: lighten($primary-color, 7%);
+  }
+}
+
+#karta-div {
+padding: 8%;
+
+iframe{
+  width: 80%;
+  height: 190%;
+}
+}
+
+
+
+
 
