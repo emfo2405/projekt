@@ -1,3 +1,103 @@
 
+$font-stack: Helvetica, sans-serif;
+$primary-color: #f5edde;
+$background-color: #D8DAC5;
+$highlight-color: #96A480;
+$frame-color: #f9d587;
+$text-color: #edeae1;
 
+
+@mixin button() {
+  padding: 1.5%;
+  border-radius: 5px;
+  border-color: white;
+  background-color: $frame-color;
+  margin: auto;
+  box-shadow: 5px 5px;
+
+  a {
+    text-decoration: none;
+    font-size: 100%;
+  }
+}
+
+@mixin button-hover() {
+  background-color: darken($highlight-color, 8%);
+  box-shadow: 5px 5px lighten($highlight-color, 5%);
+}
+
+
+
+body {
+  background-color: $background-color;
+}
+
+main {
+  background-color: $primary-color;
+  margin: auto;
+  width: 90%;
+}
+
+header {
+  text-align: center;
+  background-color: $highlight-color;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+/*Designval för header och meny*/
+#headmenu-small {
+  display: none;
+}
+
+
+nav {
+  background-color: $highlight-color;
+}
+
+#menutitle {
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 120%;
+}
+
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 1%;
+}
+
+#headmenu {
+  li {
+    font-size: 110%;
+    float: inline-start;
+  }
+}
+
+
+#headmenu li {
+  a {
+    display: block;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  a:hover {
+    background-color: darken($highlight-color, 10%);
+    color: white;
+  }
+}
+
+#search-button {
+  @include button();
+}
 
