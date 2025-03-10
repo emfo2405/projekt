@@ -8,12 +8,13 @@ $text-color: #edeae1;
 
 
 @mixin button() {
-  padding: 1.5%;
-  border-radius: 5px;
-  border-color: white;
+  padding: 0.5%;
+  padding-right: 2%;
+  padding-left: 2%;
+  border-radius: 10px;
+  border-color: $frame-color;
   background-color: $frame-color;
   margin: auto;
-  box-shadow: 5px 5px;
 
   a {
     text-decoration: none;
@@ -22,8 +23,8 @@ $text-color: #edeae1;
 }
 
 @mixin button-hover() {
-  background-color: darken($highlight-color, 8%);
-  box-shadow: 5px 5px lighten($highlight-color, 5%);
+  background-color: darken($frame-color, 10%);
+  cursor: pointer;
 }
 
 
@@ -99,5 +100,9 @@ nav {
 
 #search-button {
   @include button();
+}
+
+#search-button:hover {
+@include button-hover();
 }
 
