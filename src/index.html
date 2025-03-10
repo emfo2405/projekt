@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <!--Grundinställningar och tillägg av CSS-fil och JavaScript-fil-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luftkollen</title>
+    <link rel="stylesheet" href="css/main.scss" />
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/karta.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="grid-container">
+            <header>
+                <a id="sidtitel" href="index.html">
+                    <h1>
+                        Luftkollen
+                    </h1>
+                </a>
+                <!--Hamaburgermeny-->
+                <div id="headmenu-small">
+                    <div class="headmenu-small-div">
+                        <a id="sidtitel-small" href="index.html">
+                            <h1>
+                                Luftkollen
+                            </h1>
+                        </a>
+                        <ul id="menu-small">
+                            <li><a href="index.html">Hem</a></li>
+                            <li><a href=#>Om luftkvalitét</a></li>
+                            <li><a href=#>Kontakta oss</a></li>
+                        </ul>
+                        <!--Menyikon för öppna-->
+                        <button class="menu-btn open" id="open-menu">
+                            <span class="menu-icon">
+                                <span class="bars"></span>
+                                <span class="bars"></span>
+                                <span class="bars"></span>
+                            </span>
+                            <span class="menu-text">Meny</span>
+                        </button>
+                        <!--Menyikon för stäng-->
+                        <button class="menu-btn close" id="close-menu">
+                            <span class="menu-icon">
+                                <span class="bars cross1"></span>
+                                <span class="bars cross2"></span>
+                            </span>
+                            <span class="menu-text">Stäng</span>
+                        </button>
+                    </div>
+                </div>
+                <!--Meny-->
+                <div id="headmenu">
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="index.html">Hem</a></li>
+                            <li><a href=#>Om luftkvalitét</a></li>
+                            <li><a href=#>Kontakta oss</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div id="sidinledning">
+                <h1>Kolla upp din luftkvalitét!</h1>
+                <p>Välkommen till Luftkollen! Här kan du enkelt söka upp din stad och se vilka halter partikelnivåerna är på där du bor.</p>
+            </div>
+
+            <div id="search-bar">
+                <h2>Karta </h2>
+                <input id="search" type="text" placeholder="Sök efter stad eller plats..." name="search">
+                <button id="search-button" type="submit">Sök</button>
+            </div>
+
+            <div id="karta-div">
+                <h2>Sök efter din stad</h2>
+                <iframe id="karta"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=11.342010498046877%2C57.47634265702234%2C12.008056640625%2C57.93708951136029&amp;layer=mapnik&amp;marker=57.70744890148513%2C11.675033569335938">
+            </iframe>
+            </div>
+
+            <div id="luftkvalitet">
+                <h2>Luftkvalitétsnivåer</h2>
+                <h3>PM10</h3>
+                <h3>PM2.5</h3>
+            </div>
+
+            <div id="merinfo">
+                <h2>Vad betyder allt?</h2>
+                <p>Både PM10 och PM2.5 kommer från lite olika källor, i stadsmiljöer är den främsta bidragande faktorn trafik. Nivåer som överstiger gränsvärden kan påverka miljön och människors hälsa negativt. För att läsa mer gå in på "Om luftkvalitét".</p>
+            </div>
+
+            <div id="merinfo-knapp">
+                <a></a>
+            </div>
+
+
+            <!--sidans footer-->
+            <footer>
+                <p>Luftkollen<br>
+                    Projekt<br>
+                2025</p>
+            </footer>
+        </div>
+
+    </main>
+</body>
+
+</html>
