@@ -34,7 +34,6 @@ async function fetchData() {
 
         //Kör funktioner för att skriva ut data
 
-console.table(data);
         takeData(data);
 
         //Felmeddelande om något går fel
@@ -95,7 +94,6 @@ async function fetchAirData(latitudeSearchEl,longitudeSearchEl) {
         airData = await airResponse.json();
 
         //Kör funktioner för att skriva ut data
-console.table(airData);
 
         runAirData(airData);
 
@@ -114,5 +112,16 @@ function runAirData(airData) {
 
     document.getElementById("pm10").innerHTML = airDataPM10 + " &#181g/m&#179";
     document.getElementById("pm25").innerHTML = airDataPM2_5 + " &#181g/m&#179";
+
+    if (airDataPM10 > 50) {
+        document.getElementById("symbol").innerHTML = "sentiment_dissatisfied";
+        document.getElementById("symbol").style.color = "red";
+    } else if (airDataPM10 > 20) {
+        document.getElementById("symbol").innerHTML = "sentiment_neutral";
+        document.getElementById("symbol").style.color = "orange";
+    } else {
+        document.getElementById("symbol").innerHTML = "sentiment_satisfied";
+        document.getElementById("symbol").style.color = "green";
+    }
 
 }
