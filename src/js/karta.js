@@ -114,14 +114,25 @@ function runAirData(airData) {
     document.getElementById("pm25").innerHTML = airDataPM2_5 + " &#181g/m&#179";
 
     if (airDataPM10 > 50) {
-        document.getElementById("symbol").innerHTML = "sentiment_dissatisfied";
-        document.getElementById("symbol").style.color = "red";
+        document.getElementById("symbol10").innerHTML = "sentiment_dissatisfied";
+        document.getElementById("symbol10").style.color = "red";
     } else if (airDataPM10 > 20) {
-        document.getElementById("symbol").innerHTML = "sentiment_neutral";
-        document.getElementById("symbol").style.color = "orange";
+        document.getElementById("symbol10").innerHTML = "sentiment_neutral";
+        document.getElementById("symbol10").style.color = "orange";
     } else {
-        document.getElementById("symbol").innerHTML = "sentiment_satisfied";
-        document.getElementById("symbol").style.color = "green";
+        document.getElementById("symbol10").innerHTML = "sentiment_satisfied";
+        document.getElementById("symbol10").style.color = "green";
+    }
+
+    if (airDataPM2_5 > 50) {
+        document.getElementById("symbol25").innerHTML = "sentiment_dissatisfied";
+        document.getElementById("symbol25").style.color = "red";
+    } else if (airDataPM2_5 > 20) {
+        document.getElementById("symbol25").innerHTML = "sentiment_neutral";
+        document.getElementById("symbol25").style.color = "orange";
+    } else {
+        document.getElementById("symbol25").innerHTML = "sentiment_satisfied";
+        document.getElementById("symbol25").style.color = "green";
     }
 
 }
