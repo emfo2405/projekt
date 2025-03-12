@@ -1,8 +1,8 @@
 @keyframes spinSymbol {
     0% {
-        transform: rotate(0deg);
+        transform: translate(0px, 0px);
     } 
     100% {
-        transform: rotate(360deg);
+        transform: translate(0px, -7px);
     }
 }

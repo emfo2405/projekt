@@ -113,26 +113,35 @@ function runAirData(airData) {
     document.getElementById("pm10").innerHTML = airDataPM10 + " &#181g/m&#179";
     document.getElementById("pm25").innerHTML = airDataPM2_5 + " &#181g/m&#179";
 
-    if (airDataPM10 > 50) {
-        document.getElementById("symbol10").innerHTML = "sentiment_dissatisfied";
-        document.getElementById("symbol10").style.color = "red";
-    } else if (airDataPM10 > 20) {
-        document.getElementById("symbol10").innerHTML = "sentiment_neutral";
-        document.getElementById("symbol10").style.color = "orange";
+    const symbolPM10 = document.getElementById("symbol10");
+    const symbolPM25 = document.getElementById("symbol25");
+
+    if (airDataPM10 > 45) {
+        symbolPM10.innerHTML = "sentiment_dissatisfied";
+        symbolPM10.style.color = "red";
+        symbolPM10.style.animation = "spinSymbol 1s infinite alternate";
+    } else if (airDataPM10 > 23) {
+        symbolPM10.innerHTML = "sentiment_neutral";
+        symbolPM10.style.color = "orange";
+        symbolPM10.style.animation = "spinSymbol 1s infinite alternate";
     } else {
-        document.getElementById("symbol10").innerHTML = "sentiment_satisfied";
-        document.getElementById("symbol10").style.color = "green";
+        symbolPM10.innerHTML = "sentiment_satisfied";
+        symbolPM10.style.color = "green";
+        symbolPM10.style.animation = "spinSymbol 1s infinite alternate";
     }
 
-    if (airDataPM2_5 > 50) {
-        document.getElementById("symbol25").innerHTML = "sentiment_dissatisfied";
-        document.getElementById("symbol25").style.color = "red";
-    } else if (airDataPM2_5 > 20) {
-        document.getElementById("symbol25").innerHTML = "sentiment_neutral";
-        document.getElementById("symbol25").style.color = "orange";
+    if (airDataPM2_5 > 15) {
+        symbolPM25.innerHTML = "sentiment_dissatisfied";
+        symbolPM25.style.color = "red";
+        symbolPM25.style.animation = "spinSymbol 1s infinite alternate";
+    } else if (airDataPM2_5 > 8) {
+        symbolPM25.innerHTML = "sentiment_neutral";
+        symbolPM25.style.color = "orange";
+        symbolPM25.style.animation = "spinSymbol 1s infinite alternate";
     } else {
-        document.getElementById("symbol25").innerHTML = "sentiment_satisfied";
-        document.getElementById("symbol25").style.color = "green";
+        symbolPM25.innerHTML = "sentiment_satisfied";
+        symbolPM25.style.color = "green";
+        symbolPM25.style.animation = "spinSymbol 1s infinite alternate";
     }
 
 }

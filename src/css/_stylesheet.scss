@@ -192,6 +192,20 @@ footer {
   margin-top: 5%;
 }
 
+#sidinledning {
+  margin:auto;
+  text-align: center;
+
+  p {
+    width:70%;
+    margin-left: 15%;
+  }
+}
+
+#merinfo {
+  @extend #sidinledning ;
+}
+
 
 
 
