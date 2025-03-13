@@ -47,9 +47,23 @@ footer {
     grid-column-end: 3;
 }
 
-#merinfo {
+#symbol-meaning {
     grid-row-start: 6;
     grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#symbol-tabell {
+    grid-row-start: 7;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#merinfo {
+    grid-row-start: 8;
+    grid-row-end: 8;
     grid-column-start: 1;
     grid-column-end: 5;
 }
@@ -62,8 +76,15 @@ footer {
 }
 
 #merinfo-knapp {
-    grid-row-start: 7;
-    grid-row-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#kontakt {
+    grid-row-start: 3;
+    grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 5;
 }

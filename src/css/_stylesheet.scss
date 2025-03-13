@@ -6,6 +6,9 @@ $highlight-color: #96A480;
 $frame-color: #f9d587;
 $text-color: #edeae1;
 $shadow-color: #9c8a64;
+$symbol-green: #429630;
+$symbol-orange: #d86507; 
+$symbol-red: #d42b0e;
 
 
   p{font-size: 120%;}
@@ -120,6 +123,7 @@ nav {
 
 #search-button {
   @include button();
+  margin-left: 2%;
 }
 
 #search-button:hover {
@@ -204,6 +208,56 @@ footer {
 
 #merinfo {
   @extend #sidinledning ;
+}
+
+#kontakt {
+  @extend #search-bar ;
+  width: 30%;
+  margin-top:2%;
+  margin-left: 35%;
+
+  
+  input{width:100%;
+    padding:2%;
+    margin-bottom:2%;
+    margin-top: 1%;
+}
+}
+
+#symbol-meaning {
+  @extend #sidinledning;
+}
+
+table {
+  border-collapse: collapse;
+  width: 30%;
+  margin: auto;
+  border: 2px solid;
+  border-color: $shadow-color;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+td, th {
+  border: 2px solid $shadow-color;
+  text-align: center;
+  padding: 2%;
+  font-size: 110%;
+}
+}
+
+#dissatisfied {
+  color: $symbol-red;
+  font-size: 160%;
+}
+
+#satisfied {
+  color: $symbol-green;
+  font-size: 160%;
+}
+
+#neutral {
+  color: $symbol-orange;
+  font-size: 160%;
 }
 
 
