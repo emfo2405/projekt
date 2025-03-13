@@ -2,9 +2,9 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #f5edde;
 $background-color: #D8DAC5;
-$highlight-color: #96A480;
+$highlight-color: #7a8a61;
 $frame-color: #f9d587;
-$text-color: #edeae1;
+$text-color: #f5edde;
 $shadow-color: #9c8a64;
 $symbol-green: #429630;
 $symbol-orange: #d86507; 
@@ -35,6 +35,7 @@ $symbol-red: #d42b0e;
   padding-left: 2.5%;
   background-color: $frame-color;
   margin: auto;
+  font-size: 100%;
 
   @include shadow();
 
@@ -113,11 +114,11 @@ nav {
     padding: 16px 16px;
     text-decoration: none;
     color: $text-color;
+    font-size: 120%;
   }
 
   a:hover {
     background-color: darken($highlight-color, 10%);
-    color: white;
   }
 }
 
@@ -139,13 +140,12 @@ margin-bottom: 2%;
     width: 50%;
     padding: 1%;
     background-color: lighten($primary-color, 7%);
+    font-size: 100%;
     
     @include shadow();
   }
 
-  input:focus {
-    background-color: lighten($primary-color, 7%);
-  }
+
 }
 
 #karta-div {
@@ -222,6 +222,18 @@ footer {
     margin-bottom:2%;
     margin-top: 1%;
 }
+
+#message {
+  width:100%;
+    padding:2%;
+    margin-bottom:2%;
+    margin-top: 1%;
+    padding-bottom: 20%;
+    background-color: lighten($primary-color, 7%);
+    
+    @include shadow();
+}
+
 }
 
 #symbol-meaning {
@@ -260,6 +272,39 @@ td, th {
   font-size: 160%;
 }
 
+#skicka-div {
+  margin:auto;
+}
+
+#skicka {
+  @include button();
+  padding: 25%;
+  padding-left: 45%;
+  padding-right: 45%;
+}
+
+#skicka:hover {
+  @include button-hover();
+}
+
+label {
+  font-size: 120%;
+  color: darken($shadow-color,20%);
+}
+
+header {
+  h1{
+    font-size: 230%;
+  }
+}
+
+#search-title {
+  margin:auto;
+}
+
+footer {
+  font-size: 100%;
+}
 
 
 
