@@ -1,2 +1,18 @@
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #3f4037;
+      color: #f5edde;
 
+    }
+  
+    main {
+      background-color: #3d4530;
+      box-shadow: 0px 0px 5px darken(#3d4530,20%);
+    }
+
+    label {
+        color: #f5edde;
+      }
+  
+  }
 

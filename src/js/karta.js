@@ -145,3 +145,82 @@ function runAirData(airData) {
     }
 
 }
+
+const neutral = document.getElementById("neutral25");
+const neutral2 = document.getElementById("neutral10");
+const dissatisfied = document.getElementById("dissatisfied25");
+const dissatisfied2 = document.getElementById("dissatisfied10");
+const satisfied = document.getElementById("satisfied25");
+const satisfied2 = document.getElementById("satisfied10");
+
+neutral.addEventListener("mouseover",spinNeutral25);
+neutral2.addEventListener("mouseover",spinNeutral10);
+dissatisfied.addEventListener("mouseover",spinDissatisfied25);
+dissatisfied2.addEventListener("mouseover",spinDissatisfied10);
+satisfied.addEventListener("mouseover",spinSatisfied25);
+satisfied2.addEventListener("mouseover",spinSatisfied10);
+
+
+function spinNeutral25() {
+    neutral.style.animation = 'none';
+    void neutral.offsetWidth; 
+    neutral.style.animation = "spinAround 3s";
+}
+
+function spinNeutral10() {
+    neutral2.style.animation = 'none';
+    void neutral2.offsetWidth; 
+    neutral2.style.animation = "spinAround 3s";
+}
+
+function spinDissatisfied25() {
+    dissatisfied.style.animation = 'none';
+    void dissatisfied.offsetWidth; 
+    dissatisfied.style.animation = "spinAround 3s";
+}
+
+function spinDissatisfied10() {
+    dissatisfied2.style.animation = 'none';
+    void dissatisfied2.offsetWidth; 
+    dissatisfied2.style.animation = "spinAround 3s";
+}
+function spinSatisfied25() {
+    satisfied.style.animation = 'none';
+    void satisfied.offsetWidth; 
+    satisfied.style.animation = "spinAround 3s";
+}
+
+function spinSatisfied10() {
+    satisfied2.style.animation = 'none';
+  void satisfied2.offsetWidth; 
+    satisfied2.style.animation = "spinAround 3s";
+}
+
+const medelPM10 = [0.59, 0.86, 5.18, 1.13, 13.3, 14.84, 3.31, 0.21];
+const bidrag = ['Arbetsmaskiner', 'Avfall', 'Uppvärmning av bostad och lokaler', 'El och fjärrvärme', 'Industri', 'Inrikes transporter', 'Jordbruk', 'Lösningsmedel och produktanvändning'];
+const medelPM25 = [0.56, 0.85, 4.92, 0.77, 4.26, 2.29, 0.5, 0.14];
+
+function drawDiagramP(bidrag, medelPM10) {
+    const ctx = document.getElementById('myChart10');
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: bidrag,
+        datasets: [{
+          label: 'Bidrag till PM10',
+          data: medelPM10,
+          borderWidth: 2,
+          backgroundColor: ['#861f0d', '#56423D', '#BEA6A0', '#541308', '#110402']
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+  
+      }
+    });
+  
+  }

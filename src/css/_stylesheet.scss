@@ -2,13 +2,23 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #f5edde;
 $background-color: #D8DAC5;
-$highlight-color: #7a8a61;
+$highlight-color: #65734f;
 $frame-color: #f9d587;
 $text-color: #f5edde;
 $shadow-color: #9c8a64;
 $symbol-green: #429630;
 $symbol-orange: #d86507; 
 $symbol-red: #d42b0e;
+
+@mixin text-color($background) {
+  @if $background ==$primary-color {
+    color: black;
+  }
+
+  @else {
+    color: $text-color;
+  }
+}
 
 
   p{font-size: 120%;}
@@ -257,17 +267,17 @@ td, th {
 }
 }
 
-#dissatisfied {
+#dissatisfied25, #dissatisfied10 {
   color: $symbol-red;
   font-size: 160%;
 }
 
-#satisfied {
+#satisfied25, #satisfied10 {
   color: $symbol-green;
   font-size: 160%;
 }
 
-#neutral {
+#neutral25, #neutral10 {
   color: $symbol-orange;
   font-size: 160%;
 }
@@ -306,5 +316,20 @@ footer {
   font-size: 100%;
 }
 
+.image {
+  width: 60%;
+}
+
+#partiklar {
+  animation: moveParticles 1.5s infinite linear alternate;
+}
+
+#industri {
+  animation: spinSymbol 1s infinite linear alternate;
+}
+
+#partiklar-titel {
+  text-align: center;
+}
 
 
