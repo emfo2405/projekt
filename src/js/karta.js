@@ -1,4 +1,33 @@
+/**
+ * @function fetchData - Hämtar in data från nominatim API för en plats
+ * @param {value} searchInput - Tar in värdet för det som skrivs in i sökrutan
+ * @param response - Hämtar API för nominatim
+ * @param data - Svar från inhämtat API
+ * Sedan körs funktionen takeData med @param data som input
+ */
+
+/**
+ * @function takeData
+ * @param {*} data - Hämtat API från fetchData
+ * @param {Array} latitudeSearch - Tar ut latituder för de platser som matchar det som skrivits in i sökrutan
+ * @param {Number} latitudeSearchEl - Tar ut latitud för den första platsen i arrayen latitudeSearch
+ * @param {Array} longitudeSearch - Tar ut longituder för de platser som matchar det som skrivits in i sökrutan
+ * @param {Number} longitudeSearchEl - Tar ut longitud för den första platsen i arrayen i longitudeSearch
+ * Värden för att skapa en boundingbox behövs för att zooma in på den plats på kartan man vill visa
+ * Detta skapas här genom att ta värden för min latitud, min longitud, max longitud och max latitud
+ * @param {Number} minLat - Latitud från latitudeSearchEl - 0,1 för att få min longitud
+ * @param {Number} maxLat - Latitud från latitudeSearchEl + 0,1 för att få max latitud
+ * @param {Number} minLong - Longitud från longitudeSearchEl - 0.1 för att få min longitud
+ * @param {Number} maxLong - Longitud från longitudeSearchEl + 0.1 för att få max longitud
+ * Till sist uppdateras länken för kartan med variabler för latitud och longitud för att visa kartan för vald plats
+ */
+
+/**
+ * @function fetchAirData
+ */
+
 "use strict";
+window.onload = drawDiagramP;
 
 //Skapa en tom array för att lagra inläst data i
 let data = [];
@@ -8,20 +37,10 @@ let airData = [];
 document.getElementById('search-button').onclick = fetchData;
 
 //Funktion för att hämta in data från API
-/**
- * Hämtar in data från nominatim API för en plats
- * @function fetchData
- * @param {value} searchInput - Tar in värdet för det som skrivs in i sökrutan
- * @param response - Hämtar API för nominatim
- * @param data - Svar från inhämtat API
- * Sedan körs funktionen takeData med @param data som input
- */
 async function fetchData() {
     try {
         //Hämtar in data
         const searchInput = document.getElementById("search").value;
-
-
 
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${searchInput}&format=json`);
         //Felmeddelande om datan inte läses in korrekt
@@ -43,21 +62,6 @@ async function fetchData() {
 }
 
 //Funktion för att ta ut longitud och latitud för sökt plats
-/**
- * @function takeData
- * @param {*} data - Hämtat API från fetchData
- * @param {Array} latitudeSearch - Tar ut latituder för de platser som matchar det som skrivits in i sökrutan
- * @param {Number} latitudeSearchEl - Tar ut latitud för den första platsen i arrayen latitudeSearch
- * @param {Array} longitudeSearch - Tar ut longituder för de platser som matchar det som skrivits in i sökrutan
- * @param {Number} longitudeSearchEl - Tar ut longitud för den första platsen i arrayen i longitudeSearch
- * Värden för att skapa en boundingbox behövs för att zooma in på den plats på kartan man vill visa
- * Detta skapas här genom att ta värden för min latitud, min longitud, max longitud och max latitud
- * @param {Number} minLat - Latitud från latitudeSearchEl - 0,1 för att få min longitud
- * @param {Number} maxLat - Latitud från latitudeSearchEl + 0,1 för att få max latitud
- * @param {Number} minLong - Longitud från longitudeSearchEl - 0.1 för att få min longitud
- * @param {Number} maxLong - Longitud från longitudeSearchEl + 0.1 för att få max longitud
- * Till sist uppdateras länken för kartan med variabler för latitud och longitud för att visa kartan för vald plats
- */
 function takeData(data) {
 
     const latitudeSearch = data.map(plats => plats.lat);
@@ -200,27 +204,33 @@ const medelPM10 = [0.59, 0.86, 5.18, 1.13, 13.3, 14.84, 3.31, 0.21];
 const bidrag = ['Arbetsmaskiner', 'Avfall', 'Uppvärmning av bostad och lokaler', 'El och fjärrvärme', 'Industri', 'Inrikes transporter', 'Jordbruk', 'Lösningsmedel och produktanvändning'];
 const medelPM25 = [0.56, 0.85, 4.92, 0.77, 4.26, 2.29, 0.5, 0.14];
 
-function drawDiagramP(bidrag, medelPM10) {
-    const ctx = document.getElementById('myChart10');
+
+
+function drawDiagramP() {
+    console.log('hejsan');
+    const medelPM10 = [0.59, 0.86, 5.18, 1.13, 13.3, 14.84, 3.31, 0.21];
+const bidrag = ['Arbetsmaskiner', 'Avfall', 'Uppvärmning av bostad och lokaler', 'El och fjärrvärme', 'Industri', 'Inrikes transporter', 'Jordbruk', 'Lösningsmedel och produktanvändning'];
+
+
+    const ctx = document.getElementById("myChart10");
     new Chart(ctx, {
-      type: 'pie',
-      data: {
-        labels: bidrag,
-        datasets: [{
-          label: 'Bidrag till PM10',
-          data: medelPM10,
-          borderWidth: 2,
-          backgroundColor: ['#861f0d', '#56423D', '#BEA6A0', '#541308', '#110402']
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
+        type: 'pie',
+        data: {
+          labels: bidrag,
+          datasets: [{
+            label: 'Totalt antal sökande',
+            data: medelPM10,
+            borderWidth: 2,
+            backgroundColor: ['#861f0d', '#56423D', '#BEA6A0', '#541308', '#110402']
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
           }
+    
         }
-  
-      }
-    });
-  
-  }
+      })
+    };

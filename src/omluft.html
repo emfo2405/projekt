@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luftkollen</title>
     <link rel="stylesheet" href="css/main.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/karta.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -94,8 +95,9 @@
         Egentligen finns det inga nivåer av partiklar som är helt riskfria, därför strävar man mot en så låg halt som möjligt, men WHO har satt upp gränsvärden för dygnsmedelvärdet som är 15 &#181g/m&#179 för PM2.5 och 45 &#181g/m&#179 för PM10.</p>  
 </div>
 
-<div id="myChart10">
-
+<div id="myChart">
+    <h2>Bidrag till PM10</h2>
+    <canvas id="myChart10"></canvas>
 </div>
 
 
