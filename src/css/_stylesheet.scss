@@ -60,6 +60,17 @@ $symbol-red: #d42b0e;
   cursor: pointer;
 }
 
+@mixin textSection() {
+    margin:auto;
+    text-align: center;
+  
+    p {
+      width:60%;
+      margin-left: 20%;
+    }
+  }
+
+
 
 
 body {
@@ -193,6 +204,10 @@ iframe{
 
 #merinfo-knapp{
   @include button();
+  a {
+    color: black;
+    font-size: 120%;
+  }
 }
 
 #merinfo-knapp:hover{
@@ -207,17 +222,12 @@ footer {
 }
 
 #sidinledning {
-  margin:auto;
-  text-align: center;
-
-  p {
-    width:70%;
-    margin-left: 15%;
-  }
+@include textSection()
 }
 
 #merinfo {
-  @extend #sidinledning ;
+  @include textSection();
+
 }
 
 #kontakt {
@@ -247,7 +257,9 @@ footer {
 }
 
 #symbol-meaning {
-  @extend #sidinledning;
+  @include textSection();
+
+
 }
 
 table {

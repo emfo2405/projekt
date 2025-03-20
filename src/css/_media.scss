@@ -20,8 +20,77 @@
   
   }
 
+  @media (max-width: 2100px) {
+
+    #luftkvalitet {
+        grid-row-start: 6;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #luftkvalitet {
+        width: 30%;
+        margin-bottom: 5%;
+
+        #luftkvalitet-content {
+            margin-top: 10%;
+          }
+
+          h2 {
+            margin-bottom: 10%;
+          }
+    }
+
+    #karta-div {
+        grid-row-start: 7;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #symbol-meaning {
+        grid-row-start: 8;
+        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+#symbol-tabell {
+    grid-row-start: 9;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#merinfo{
+    grid-row-start: 10;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#merinfo-knapp {
+    grid-row-start: 11;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+footer{
+    grid-row-start: 12;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+
+
+  }
+
 
   @media (max-width: 1800px) {
+
 
     #kontakt {
         width: 40%;
@@ -35,4 +104,41 @@
         width: 60%;
         margin-left: 20%;
     }
+
+    #luftkvalitet{
+        width: 50%;
+    }
+
+    #symbol-meaning p{
+        width: 70%;
+        margin-left: 15%;
+}
+
+    #mer-info p{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    #symbol-tabell table {
+        width: 70%;
+    }
+
+    #luftkvalitet {
+        width: 57%;
+    }
+
+    #karta-div{
+    iframe{
+        width: 370px;
+        height: 370px;
+      }}
+
+      #search-bar {
+        width: 100%;
+        margin-left: 18%;
+
+        input{
+            padding: 2%;
+        }
+      }
   }
