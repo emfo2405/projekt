@@ -339,4 +339,12 @@ footer {
   text-align: center;
 }
 
+#link {
+  color:black;
+}
+
+#link:hover {
+  color: lighten(black, 50%);
+}
+
 

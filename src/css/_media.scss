@@ -13,6 +13,26 @@
     label {
         color: #f5edde;
       }
+
+      #link {
+        color: lighten(black, 50%);
+      }
   
   }
 
+
+  @media (max-width: 1800px) {
+
+    #kontakt {
+        width: 40%;
+        margin-left: 30%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+
+    #kontakt {
+        width: 60%;
+        margin-left: 20%;
+    }
+  }

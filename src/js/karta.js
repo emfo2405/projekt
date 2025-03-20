@@ -29,6 +29,7 @@
 "use strict";
 window.onload = drawDiagramP;
 
+
 //Skapa en tom array för att lagra inläst data i
 let data = [];
 let airData = [];
@@ -200,15 +201,15 @@ function spinSatisfied10() {
     satisfied2.style.animation = "spinAround 3s";
 }
 
-const medelPM10 = [0.59, 0.86, 5.18, 1.13, 13.3, 14.84, 3.31, 0.21];
+
 const bidrag = ['Arbetsmaskiner', 'Avfall', 'Uppvärmning av bostad och lokaler', 'El och fjärrvärme', 'Industri', 'Inrikes transporter', 'Jordbruk', 'Lösningsmedel och produktanvändning'];
-const medelPM25 = [0.56, 0.85, 4.92, 0.77, 4.26, 2.29, 0.5, 0.14];
+
 
 
 
 function drawDiagramP() {
     console.log('hejsan');
-    const medelPM10 = [0.59, 0.86, 5.18, 1.13, 13.3, 14.84, 3.31, 0.21];
+    const medelValue = [0.575, 0.855, 5.05, 0.95, 8.78, 8.565, 1.905, 0.175];
 const bidrag = ['Arbetsmaskiner', 'Avfall', 'Uppvärmning av bostad och lokaler', 'El och fjärrvärme', 'Industri', 'Inrikes transporter', 'Jordbruk', 'Lösningsmedel och produktanvändning'];
 
 
@@ -218,8 +219,8 @@ const bidrag = ['Arbetsmaskiner', 'Avfall', 'Uppvärmning av bostad och lokaler'
         data: {
           labels: bidrag,
           datasets: [{
-            label: 'Totalt antal sökande',
-            data: medelPM10,
+            label: 'Bidrag till partikelnivåer',
+            data: medelValue,
             borderWidth: 2,
             backgroundColor: ['#861f0d', '#56423D', '#BEA6A0', '#541308', '#110402']
           }]
@@ -234,3 +235,5 @@ const bidrag = ['Arbetsmaskiner', 'Avfall', 'Uppvärmning av bostad och lokaler'
         }
       })
     };
+
+   
