@@ -346,9 +346,15 @@ footer {
 
 #myChart {
   height: 500px;
-  width: 700px;
+  width: 500px;
   margin:auto;
   text-align: center;
+  margin-bottom: 5%;
+  p{
+    width: 140%;
+    margin-bottom: 5%;
+    margin-left: -20%;
+  }
 }
 
 #link {
@@ -359,4 +365,29 @@ footer {
   color: lighten(black, 50%);
 }
 
+#partikel-info {
+  @include textSection();
+
+  p {
+    width: 40%;
+    margin-left: 30%;
+  }
+
+}
+
+#partikel-info2 {
+  @extend #partikel-info;
+}
+
+#partiklar {
+  width: 25%;
+  margin: auto;
+  margin-left: 42%;
+}
+
+#industri {
+  width: 30%;
+  margin: auto;
+  margin-left: 41%;
+}
 
