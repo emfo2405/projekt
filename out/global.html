@@ -1,0 +1,2760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Global</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Global</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2></h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="drawDiagramP-Ritarettdiagram"><span class="type-signature"></span>drawDiagramP - Ritar ett diagram<span class="signature">(medelValue, bidrag, ctx, type, labels, label, data, backgroundColor)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>medelValue</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">En array med värden för bidrag till totala partikelutsläppen i samhället</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>bidrag</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Text-värden för bidrag till totala partikelutsläppen i samhället</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ctx</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar in diagram-elementet från HTML-koden</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Typ av diagram som ritas upp</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>labels</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Text för värden som sätts in i diagrammet</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>label</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Rubrik för diagrammet</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Värden för bidrag till partikelhalter</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>backgroundColor</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Färger delarna i cirkeldiagrammet får</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line102">line 102</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="fetchAirData-H%C3%A4mtaindatafr%C3%A5nluftkvalit%C3%A9ts-API"><span class="type-signature"></span>fetchAirData - Hämta in data från luftkvalitéts-API<span class="signature">(airResponse, airData)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>airResponse</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtad data från luftkvalitets-API</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>airData</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Svar från inhämtat APISedan körs funktionen runAirData med @param aiData som input</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line25">line 25</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="fetchData-H%C3%A4mtarindatafr%C3%A5nnominatimAPIf%C3%B6renplats"><span class="type-signature"></span>fetchData - Hämtar in data från nominatim API för en plats<span class="signature">(searchInput, response, data)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>searchInput</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">value</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tar in värdet för det som skrivs in i sökrutan</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>response</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar API för nominatim</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Svar från inhämtat APISedan körs funktionen takeData med @param data som input</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="myFunction-Funktionf%C3%B6ratt%C3%B6ppnaochst%C3%A4ngahamburgermenygenomklickp%C3%A5symboler"><span class="type-signature"></span>myFunction - Funktion för att öppna och stänga hamburgermeny genom klick på symboler<span class="signature">(menuSmall, openBtn, closeBtn)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>menuSmall</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Elementet för hamburgermenyn</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>openBtn</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Symbol för att visa en öppna knapp för menyn</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>closeBtn</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Symbol för att visa en stäng knapp för menynopenBtn och closeBtn ändrar display från flex till none och tvärtom beroende på initialvärdet vid klick</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="main.js.html">main.js</a>, <a href="main.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="runAirData-H%C3%A4mtarutrelevantdatafr%C3%A5nAPI"><span class="type-signature"></span>runAirData - Hämtar ut relevant data från API<span class="signature">(airDataEl, airDataPM10, airDataPM2_5, symbolPM10, symbolPM25)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>airDataEl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tar ut nuvarande luftkvalitésdata</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>airDataPM10</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Värde för nuvarande PM10-nivå</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>airDataPM2_5</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Värde för nuvarande PM2.5-nivå</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>symbolPM10</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar in elementet för symbolen vid PM10</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>symbolPM25</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar in elementet för symbolen vid PM2.5if-sats för att kontrollera värde på PM10 och PM2.5</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>symbolPM10.innerHTML</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ändrar symbol beroende på värde</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>symbolPM10.style.color</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ändrar färg på symbol beroende på värde</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>symbolPM10.style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">lägger till en animation på symbolen</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>symbolPM25.innerHTML</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ändrar symbol beroende på värde</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>symbolPM25.style.color</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ändrar färg på symbol beroende på värde</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>symbolPM25.style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">lägger till en animation på symbolen</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line32">line 32</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="spinDissatisfied10-L%C3%A4ggertillanimationp%C3%A5symbolochtarborts%C3%A5attdenupprepas"><span class="type-signature"></span>spinDissatisfied10 - Lägger till animation på symbol och tar bort så att den upprepas<span class="signature">(dissatisfied2)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dissatisfied2</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar in elementet dissatisfied10 från HTML-kodenEn eventlistener läggs till på dissatisfied innan funktionen för att köra funktionen spinDissatisfied10 när musen förs över symbolen
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på objektet dissatisfied2, i det här fallet tar den bort animationen</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>offsetWidth</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Med void innan tvingas animationen tillbaka till ursprung så att den kan uppdateras</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på elementet dissatisfied2</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line75">line 75</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="spinDissatisfied25-L%C3%A4ggertillanimationp%C3%A5symbolochtarborts%C3%A5attdenupprepas"><span class="type-signature"></span>spinDissatisfied25 - Lägger till animation på symbol och tar bort så att den upprepas<span class="signature">(dissatisfied)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dissatisfied</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar in elementet dissatisfied25 från HTML-kodenEn eventlistener läggs till på dissatisfied innan funktionen för att köra funktionen spinDissatisfied25 när musen förs över symbolen
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på objektet dissatisfied, i det här fallet tar den bort animationen</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>offsetWidth</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Med void innan tvingas animationen tillbaka till ursprung så att den kan uppdateras</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på elementet dissatisfied</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line66">line 66</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="spinNeutral10-L%C3%A4ggertillanimationp%C3%A5symbolochtarborts%C3%A5attdenupprepas"><span class="type-signature"></span>spinNeutral10 - Lägger till animation på symbol och tar bort så att den upprepas<span class="signature">(neutral2)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>neutral2</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar in elementet neutral10 från HTML-kodenEn eventlistener läggs till på neutral2 innan funktionen för att köra funktionen spinNeutral10 när musen förs över symbolen
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på objektet neutral2, i det här fallet tar den bort animationen</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>offsetWidth</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Med void innan tvingas animationen tillbaka till ursprung så att den kan uppdateras</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på elementet neutral2</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line57">line 57</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="spinNeutral25-L%C3%A4ggertillanimationp%C3%A5symbolochtarborts%C3%A5attdenupprepas"><span class="type-signature"></span>spinNeutral25 - Lägger till animation på symbol och tar bort så att den upprepas<span class="signature">(neutral)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>neutral</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar in elementet neutral25 från HTML-kodenEn eventlistener läggs till på neutral innan funktionen för att köra funktionen spinNeutral25 när musen förs över symbolen
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på objektet neutral, i det här fallet tar den bort animationen</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>offsetWidth</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Med void innan tvingas animationen tillbaka till ursprung så att den kan uppdateras</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på elementet neutral</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line48">line 48</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="spinSatisfied10-L%C3%A4ggertillanimationp%C3%A5symbolochtarborts%C3%A5attdenupprepas"><span class="type-signature"></span>spinSatisfied10 - Lägger till animation på symbol och tar bort så att den upprepas<span class="signature">(satisfied2)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>satisfied2</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar in elementet satisfied10 från HTML-kodenEn eventlistener läggs till på satisfied2 innan funktionen för att köra funktionen spinSatisfied10 när musen förs över symbolen
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på objektet satisfied2, i det här fallet tar den bort animationen</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>offsetWidth</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Med void innan tvingas animationen tillbaka till ursprung så att den kan uppdateras</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på elementet satisfied2</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line93">line 93</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="spinSatisfied25-L%C3%A4ggertillanimationp%C3%A5symbolochtarborts%C3%A5attdenupprepas"><span class="type-signature"></span>spinSatisfied25 - Lägger till animation på symbol och tar bort så att den upprepas<span class="signature">(satisfied)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>satisfied</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtar in elementet satisfied25 från HTML-kodenEn eventlistener läggs till på satisfied innan funktionen för att köra funktionen spinSatisfied25 när musen förs över symbolen
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på objektet satisfied, i det här fallet tar den bort animationen</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>offsetWidth</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Med void innan tvingas animationen tillbaka till ursprung så att den kan uppdateras</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>style.animation</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sätter en animation på elementet satisfied</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line84">line 84</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="takeData"><span class="type-signature"></span>takeData<span class="signature">(data, latitudeSearch, latitudeSearchEl, longitudeSearch, longitudeSearchEl, minLat, maxLat, minLong, maxLong)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Hämtat API från fetchData</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>latitudeSearch</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tar ut latituder för de platser som matchar det som skrivits in i sökrutan</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>latitudeSearchEl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tar ut latitud för den första platsen i arrayen latitudeSearch</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>longitudeSearch</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tar ut longituder för de platser som matchar det som skrivits in i sökrutan</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>longitudeSearchEl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tar ut longitud för den första platsen i arrayen i longitudeSearchVärden för att skapa en boundingbox behövs för att zooma in på den plats på kartan man vill visaDetta skapas här genom att ta värden för min latitud, min longitud, max longitud och max latitud</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>minLat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Latitud från latitudeSearchEl - 0,1 för att få min longitud</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxLat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Latitud från latitudeSearchEl + 0,1 för att få max latitud</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>minLong</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Longitud från longitudeSearchEl - 0.1 för att få min longitud</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxLong</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Longitud från longitudeSearchEl + 0.1 för att få max longitudTill sist uppdateras länken för kartan med variabler för latitud och longitud för att visa kartan för vald plats</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="karta.js.html">karta.js</a>, <a href="karta.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#drawDiagramP-Ritarettdiagram">drawDiagramP - Ritar ett diagram</a></li><li><a href="global.html#fetchAirData-H%25C3%25A4mtaindatafr%25C3%25A5nluftkvalit%25C3%25A9ts-API">fetchAirData - Hämta in data från luftkvalitéts-API</a></li><li><a href="global.html#fetchData-H%25C3%25A4mtarindatafr%25C3%25A5nnominatimAPIf%25C3%25B6renplats">fetchData - Hämtar in data från nominatim API för en plats</a></li><li><a href="global.html#myFunction-Funktionf%25C3%25B6ratt%25C3%25B6ppnaochst%25C3%25A4ngahamburgermenygenomklickp%25C3%25A5symboler">myFunction - Funktion för att öppna och stänga hamburgermeny genom klick på symboler</a></li><li><a href="global.html#runAirData-H%25C3%25A4mtarutrelevantdatafr%25C3%25A5nAPI">runAirData - Hämtar ut relevant data från API</a></li><li><a href="global.html#spinDissatisfied10-L%25C3%25A4ggertillanimationp%25C3%25A5symbolochtarborts%25C3%25A5attdenupprepas">spinDissatisfied10 - Lägger till animation på symbol och tar bort så att den upprepas</a></li><li><a href="global.html#spinDissatisfied25-L%25C3%25A4ggertillanimationp%25C3%25A5symbolochtarborts%25C3%25A5attdenupprepas">spinDissatisfied25 - Lägger till animation på symbol och tar bort så att den upprepas</a></li><li><a href="global.html#spinNeutral10-L%25C3%25A4ggertillanimationp%25C3%25A5symbolochtarborts%25C3%25A5attdenupprepas">spinNeutral10 - Lägger till animation på symbol och tar bort så att den upprepas</a></li><li><a href="global.html#spinNeutral25-L%25C3%25A4ggertillanimationp%25C3%25A5symbolochtarborts%25C3%25A5attdenupprepas">spinNeutral25 - Lägger till animation på symbol och tar bort så att den upprepas</a></li><li><a href="global.html#spinSatisfied10-L%25C3%25A4ggertillanimationp%25C3%25A5symbolochtarborts%25C3%25A5attdenupprepas">spinSatisfied10 - Lägger till animation på symbol och tar bort så att den upprepas</a></li><li><a href="global.html#spinSatisfied25-L%25C3%25A4ggertillanimationp%25C3%25A5symbolochtarborts%25C3%25A5attdenupprepas">spinSatisfied25 - Lägger till animation på symbol och tar bort så att den upprepas</a></li><li><a href="global.html#takeData">takeData</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sun Mar 23 2025 10:30:56 GMT+0100 (centraleuropeisk normaltid)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -83,17 +83,11 @@ footer{
     grid-column-start: 1;
     grid-column-end: 5;
 }
-
-
-
   }
 
 
   @media (max-width: 1800px) {
 
-    body {
-        background-color: aqua;
-    }
 
     #kontakt {
         width: 40%;
@@ -129,13 +123,9 @@ footer{
 
   @media (max-width: 1000px) {
 
-    body {
-        background-color: #3f4037;
-    }
-
-    #kontakt {
+    #contact-form {
         width: 60%;
-        margin-left: 20%;
+        margin-left: 2%;
     }
 
     #luftkvalitet{
@@ -333,9 +323,7 @@ footer{
   }
 
   @media (max-width: 800px) {
-    body {
-        background-color: pink;
-    }
+
 
     #myChart {
         margin-bottom: 45%;
